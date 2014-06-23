@@ -57,9 +57,14 @@ module.exports = function (config) {
 		singleRun: true,
 
 		coverageReporter: {
-			type: 'cobertura',
-			dir: 'shippable/codecoverage/',
-			file: 'coverage.xml'
+			reporters: [{
+				type: 'html',
+				dir: 'shippable/codecoverage/'
+			}, {
+				type: 'cobertura',
+				dir: 'shippable/codecoverage/',
+				file: 'coverage.xml'
+			}]
 		},
 		junitReporter: {
 			outputFile: 'shippable/testresults/unit.xml',
