@@ -15,5 +15,5 @@ script:
 
 after_script:
   - ls shippable/codecoverage
-  - mv /shippable/codecoverage/*/coverage.xml /shippable/codecoverage/coverage.xml
+  - cp shippable/codecoverage/*/coverage.xml ../
 
