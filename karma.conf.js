@@ -33,7 +33,7 @@ module.exports = function (config) {
 		// test results reporter to use
 		// possible values: 'dots', 'progress'
 		// available reporters: https://npmjs.org/browse/keyword/karma-reporter
-		reporters: ['progress', 'coverage'],
+		reporters: ['progress', 'coverage', 'junit'],
 
 		// web server port
 		port: 9876,
@@ -46,7 +46,7 @@ module.exports = function (config) {
 		logLevel: config.LOG_INFO,
 
 		// enable / disable watching file and executing tests whenever any file changes
-		autoWatch: true,
+		autoWatch: false,
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
@@ -58,7 +58,12 @@ module.exports = function (config) {
 
 		coverageReporter: {
 			type: 'cobertura',
-			dir: 'shippable/codecoverage'
-		}
+			dir: 'shippable/codecoverage/',
+			file: 'coverage.xml'
+		},
+		junitReporter: {
+			outputFile: 'shippable/testresults/unit.xml',
+			suite: ''
+		},
 	});
 };

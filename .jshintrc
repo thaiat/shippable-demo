@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "jasmine": false,
+      "spyOn": false,
+      "it": false,
+      "inject": false,
+      "console": false,
+      "describe": false,
+      "expect": false,
+      "beforeEach": false,
+      "waits": false,
+      "waitsFor": false,
+      "runs": false,
+      "angSpa":false,
+      "config":false,
+      "angular":false,
+      "moment":false,
+      "_":false,
+      "ansi_up":false
+  },
+    "browser" : true, 
+    "devel" : true, 
+    "dojo" : true,
+    "nonstandard" : true, 
+    "node": true, 
+    "debug" : false, 
+    "bitwise" : true,
+    "curly" : true, 
+    "latedef" : true, 
+    "noempty" : true,
+    "trailing" : true,
+    "undef" : true
+}
