@@ -14,7 +14,5 @@ script:
   - npm test
 
 after_script:
-  - ls shippable/codecoverage
-  - cp shippable/codecoverage/*/coverage.xml shippable/codecoverage
-  - ls shippable/codecoverage
+  - mv shippable/codecoverage/*/coverage.xml shippable/codecoverage
 
