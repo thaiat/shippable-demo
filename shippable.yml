@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - 0.10.25
+
+# Make folders for the reports, and create the SQL db
+before_script:
+
+
+script:
+  - npm test
