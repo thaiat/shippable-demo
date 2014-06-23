@@ -1,0 +1,21 @@
+[33m0bcdca4[m Fix again the mv command
+[33m34501ef[m Add debug info
+[33mff9546f[m Fix the mv command again
+[33ma9e0e7b[m Fix the mv command
+[33m54c9cdf[m Fix the mv command
+[33m9e72fab[m Change the source path for the codecovearge file
+[33mfb1e3c6[m Add a move command in shippable config file to move th code coverage file
+[33m594cb68[m Add explicit installation for npm in shippable config file
+[33m7069cef[m Add jshintrc, and configure karma for junit output
+[33m64e40e6[m Change the destination for the karma coverage file so shippable can find it
+[33m2f4b83f[m Re-add the explicit installation for bower
+[33m1599d12[m Add installation of bower as a global package in shippable config file
+[33mc23fe97[m Add explicit bower install to shippable config file
+[33mc718d4a[m Add automatic installation of bower packages via npm install
+[33maf53b30[m Add karma installation to shippable config file
+[33m71a1c7c[m Add shippable.yml config file
+[33m45b3bfe[m Add helloWorld controller and unit test
+[33m79da50c[m Install angular and angular-mocks bower packages
+[33m8645367[m Install needed npm packages
+[33m1524531[m add config files
+[33mac54d74[m Initial commit
