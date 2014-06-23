@@ -14,4 +14,4 @@ script:
   - npm test
 
 after_script:
-  - mv shippable/codecoverage/PhantomJS%201.9.7%20%28Linux%29/coverage.xml shippable/codecoverage/coverage.xml
+  - mv /shippable/codecoverage/PhantomJS\ 1.9.7\ (Linux)/coverage.xml /shippable/codecoverage/coverage.xml
