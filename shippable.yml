@@ -4,6 +4,7 @@ node_js:
   - 0.10.25
 install:
   - npm install -g karma karma-cli
+  - bower install
 # Make folders for the reports, and create the SQL db
 before_script:
 
