@@ -58,7 +58,7 @@ module.exports = function (config) {
 
 		coverageReporter: {
 			type: 'cobertura',
-			dir: 'shippable/'
+			dir: 'shippable/codecoverage'
 		}
 	});
 };
