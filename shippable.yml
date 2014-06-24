@@ -16,4 +16,4 @@ script:
 after_script:
 
 after_success :
-  - git push  git@heroku.com:agile-forest-7942.git master
+  - git push  git@heroku.com:avi-hot-static.git master
