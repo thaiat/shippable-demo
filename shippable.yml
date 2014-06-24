@@ -24,3 +24,4 @@ after_success :
   - echo $DEBIAN_FRONTEND 
   - echo $JOB_ID 
   - echo $PULL_REQUEST 
+  - gulp
