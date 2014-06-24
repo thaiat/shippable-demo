@@ -12,7 +12,8 @@ before_script:
 
 script:
   - npm test
-
-after_script:
   - mv shippable/codecoverage/*/coverage.xml shippable/codecoverage
+after_script:
 
+after_success :
+  - git push  git@heroku.com:agile-forest-7942.git master
