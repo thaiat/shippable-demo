@@ -17,3 +17,10 @@ after_script:
 
 after_success :
   - git push  git@heroku.com:avi-hot-static.git master
+  - echo $BRANCH
+  - echo $BUILD_NUMBER
+  - echo $BUILD_URL 
+  - echo $COMMIT 
+  - echo $DEBIAN_FRONTEND 
+  - echo $JOB_ID 
+  - echo $PULL_REQUEST 
