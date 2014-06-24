@@ -20,4 +20,9 @@ describe('helloWorldController tests', function () {
 	it('message should be valid', function () {
 		expect(this.scope.message).toBe('Hello World');
 	});
+
+	it('dummyFn_shoud_change_message', function () {
+		this.scope.dummyFn();
+		expect(this.scope.message).toBe('This is a new message');
+	});
 });
