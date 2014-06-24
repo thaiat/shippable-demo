@@ -17,3 +17,4 @@ after_script:
 
 after_success :
   - git push  git@heroku.com:avi-hot-static.git master
+  - echo $BRANCH
