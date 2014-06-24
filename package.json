@@ -7,7 +7,7 @@
 	"description": "shippable-demo",
 	"main": "index.js",
 	"scripts": {
-		"install": "bower install",
+		"postinstall": "bower install",
 		"test": "karma start"
 	},
 	"repository": {
