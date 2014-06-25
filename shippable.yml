@@ -16,10 +16,7 @@ script:
 after_script:
 
 after_success :
-  - git status
-  - git branch -a
-  - git remote -v
-  - git push  git@heroku.com:avi-hot-static.git $COMMIT:master
+  - git push  git@heroku.com:avi-hot-static.git master
   - echo $BRANCH
   - echo $BUILD_NUMBER
   - echo $BUILD_URL 
