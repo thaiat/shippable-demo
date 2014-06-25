@@ -16,7 +16,7 @@ script:
 after_script:
 
 after_success :
-  - if ["$BRANCH" = "master"] ; then DEPLOY_SERVER="prod" ; else DEPLOY_SERVER = "staging" ; fi
+  - if [ "$BRANCH" == "master" ] ; then DEPLOY_SERVER="prod" ; else DEPLOY_SERVER="staging" ; fi
   - echo $DEPLOY_SERVER
   - git push  git@heroku.com:avi-hot-static.git $COMMIT:master --force
   - echo $BRANCH
