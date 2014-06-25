@@ -16,7 +16,7 @@ script:
 after_script:
 
 after_success :
-  - git push  git@heroku.com:avi-hot-static.git master
+  - git push  git@heroku.com:avi-hot-static.git master --force
   - echo $BRANCH
   - echo $BUILD_NUMBER
   - echo $BUILD_URL 
