@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - 0.10.25
 install:
-  - npm install -g karma karma-cli bower
+  - npm install -g karma karma-cli bower gulp
   - npm install
   - bower install
 # Make folders for the reports, and create the SQL db
@@ -16,7 +16,7 @@ script:
 after_script:
 
 after_success :
-  - git push  git@heroku.com:avi-hot-static.git master
+  - git push  git@heroku.com:avi-hot-static.git $COMMIT:master --force
   - echo $BRANCH
   - echo $BUILD_NUMBER
   - echo $BUILD_URL 
@@ -24,3 +24,4 @@ after_success :
   - echo $DEBIAN_FRONTEND 
   - echo $JOB_ID 
   - echo $PULL_REQUEST 
+  - gulp
