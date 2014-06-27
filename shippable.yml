@@ -2,6 +2,9 @@ language: node_js
 
 node_js:
   - 0.10.25
+env: 
+ # secure: eItqh8I6odfsdfA8pry+YK76jgwvHq6uCNiCli/By/LG9nVTjNdp8dzjOvLx3cooOY73TuGYsnUdTfbJB+cT6n48rSLxEaXETDvc3ihozw4as9R539mEBJGIA85Jn0p9CGbRZ26XS8QvUzhsYXeZ765n0vTFZuc4hXEU5BkrYVVrKu1NMDcl1qhV3wpIklzM2TqlH9+if51pHaBZ7hlsfMxqV4+N7o4A6tW0R+gtddam3OlMyLTx9rSSEULUuw0QKXgKDnFrUle8oehcseMeKwhQjz1xRg01T/5haWXL5r7Jp/cYpqEOErAL/Gv8rg2aug0W6rs6pvvQ==
+  secure: byQ9/HI7+bDjNUIxGwfdsfsdfqv9qfL3VyA9GUuBr1QoC5kkK7sFdPhEDhahqL73j8VG6LcZUndIK0UBg+jOknf6qwOXC88agaIV6YR6Fp67WSaQwTFWU9AN1C8eImWcxnpeUZRLCCYX3RWSb89OqfHlhEpvt79SixVRA09m0YcJVBCddfF4ky1Mt25gAK0mxDCPIYjoCpaJIxdUOC0UrLpM5Cfr3eu4Akq3snGiMXiRklaCSL5lsMT8wxwHpVXYHGcScrzrOYSuSXJU6EIfQr8IY4fEzHx6Q69Yt+y+/9E1Jtlq0ov87C5yIIrNvbJEwqgtWfRVrZy0zzaRhqZj0w==
 install:
   - npm install -g karma karma-cli bower gulp
   - npm install
@@ -19,6 +22,7 @@ after_success :
   - if [ "$BRANCH" == "master" ] ; then DEPLOY_SERVER="prod" ; else DEPLOY_SERVER="staging" ; fi
   - echo $DEPLOY_SERVER
   - git push  git@heroku.com:avi-hot-static.git $COMMIT:master --force
+  - git push https://thaiat:$AZURE_PASSWORD@shippable-demo-prod.scm.azurewebsites.net:443/shippable-demo-prod.git $COMMIT:master --force
   - echo $BRANCH
   - echo $BUILD_NUMBER
   - echo $BUILD_URL 
