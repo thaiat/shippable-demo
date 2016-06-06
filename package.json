@@ -15,7 +15,7 @@
 		"url": "http://github.com/thaiat/shippable-demo.git"
 	},
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/thaiat/shippable-demo/issues"
 	},
